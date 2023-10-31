@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Whiplash Driver</string>
+    <string-array name="run_number_options">
+        <item>Run 1</item>
+        <item>Run 2</item>
+        <item>Run 3</item>
+        <item>Run 4</item>
+        <item>Run 5</item>
+        <item>Run 6</item>
+        <item>Run 7</item>
+        <item>Run 8</item>
+        <item>Run 9</item>
+        <item>Run 10</item>
+        <item>Run 11</item>
+        <item>Run 12</item>
+        <item>Run 13</item>
+        <item>Run 14</item>
+        <item>Run 15</item>
+        <item>Run 16</item>
+        <item>Run 17</item>
+        <item>Run 18</item>
+        <item>Run 19</item>
+        <item>Run 20</item>
+    </string-array>
+</resources>

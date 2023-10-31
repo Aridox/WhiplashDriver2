@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    tools:context=".RossPayroll">
+
+
+    <EditText
+        android:id="@+id/dateedit"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endedit" />
+
+    <EditText
+        android:id="@+id/endedit"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="92dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payedit" />
+
+    <EditText
+        android:id="@+id/startedit"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payedit" />
+
+    <EditText
+        android:id="@+id/payedit"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/traileredit" />
+
+    <EditText
+        android:id="@+id/runnumberedit"
+        android:layout_width="129dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Run number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/traileredit"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runnumberspinner" />
+
+
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:text="Date"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endtime" />
+
+    <TextView
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:text="End Time?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starttime" />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:text="Start time?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paytxt" />
+
+    <TextView
+        android:id="@+id/paytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom"
+        android:text="Pay rate?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trailertxt" />
+
+    <TextView
+        android:id="@+id/trailertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Trailer number?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runnumber" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ryder" />
+
+    <TextView
+        android:id="@+id/runnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Run Number?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/runnumberspinner"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/submitprbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="448dp"
+        android:text="Submit to Payroll"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
